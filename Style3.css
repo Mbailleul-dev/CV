@@ -21,10 +21,10 @@ h1
 }
 #photo
 {
-    width:250px;
+    width:350px;
     height: auto;
-    margin-left:78%;
-    margin-top: 60px;
+    margin-left:74%;
+    margin-top: 30px;
 }
 nav
 {
@@ -59,9 +59,9 @@ nav ul::after
     display: table;
     clear: both;
 }
-a:hover
+nav a:hover
 {
-    color: cyan;
+    color: darkseagreen;
 }
 a:focus
 {
