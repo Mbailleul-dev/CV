@@ -4,75 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="js.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    <script src="js2.js" defer></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher', sans-serif;
+}
+body
+{
+    background-image: url(background.jpg);
+    margin: 0;
+}
+#profil
+{
+    text-align: left;
+}
+h1
+{
+    font-size: 2.8rem;
+    text-align: right;
+    margin-right: 56px;
+}
+#photo
+{
+    width:250px;
+    height: auto;
+    margin-left:78%;
+    margin-top: 60px;
+}
+nav
+{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 10px;
+}
+nav a
+{
+    display: block;    
+    text-decoration: underline solid;
+    font-size: 1.8rem;
+    padding: 10px 10px;
+
+}
+nav ul
+{
+    list-style-type: none;
+}
+
+
+nav ul li
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+a:hover
+{
+    color: cyan;
+}
+a:focus
+{
+    color: black;
+}
+a:visited
+{
+    color: black;
+}
+.sousMenu
+{
+    display: none;
+}
+nav > ul li:hover .sousMenu
+{
+    display: block;
+}
+.sousMenu
+{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sousMenu li
+{
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+	</style>
+    <title>CM Morgan Bailleul</title>
 </head>
-
-<header>
-    <div id="profil">
-        <img id="photo" src="PhotoProfil.JPG" alt="Phot de Profil" />
-    </div>
-    
-    <div id="nom"><h1><strong>Morgan Bailleul</strong></h1></div>
-
-</header>
-
 <body>
-    <br/>
-    <nav id="menuH">
-        <ul>
-            <li class="deroulant"><a href="">Compétences</a>
-                <ul class="sousMenu">
-                    <li>Développement Web HTML5</li>
-                        <ul class="menu">
-                            <li></li>
-                        </ul>
-                    <li>Développement Web CSS3</li>
-                    <li>Développement PHP</li>
-                    <li>Développement Javascript</li>
-                    <li>Utilisation Git et GitHub</li>
-                </ul>
-            </li>        
-            <li class="deroulant"><a href="">Expériences</a>
-                <ul class="sousMenu">
-                    <li>Front End</li>
-                    <li>Back End</li>
-                </ul>
-            </li>
-            <li class="deroulant"><a href="">Autres Expériences</a>
-                <ul class="sousMenu">
-                    <li>Gestionnaire d'AGV</li>
-                    <li>Cariste d'entrepôts</li>
-                    <li>Conducteur de ligne de condionnement</li>
-                    <li>Technico-commercial</li>
-                    <li>Diverses missions d'intérims et CDD</li>
-                </ul>
-            </li>
-            <li class="deroulant"><a href="">Diplômes</a>
-                <ul class="sousMenu">
-                    <li>Titre Professionnel Developpement WEB et WEB Mobile</li>
-                    <li>PSE1 et PSE2 (Prompt Secours en Equipe)</li>
-                    <li>Bac Général S spécialité Mathématiques</li>
-                </ul>
-            </li>
-            <li class="deroulant"><a href="">Loisirs</a>
-                <ul class="sousMenu">
-                    <li>Pompier Volontaire</li>
-                    <li>Concerts et festivals</li>
-                    <li>Sports mécaniques</li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <article>
+	<figure>
+		<img src="PhotoProfil.JPG" alt="Photo de profil" id="PhotoProfil" />
+	</figure>
+	<section>
+			<div>
+				<h1>Je me présente,je m'appelle Morgan</h1>
+				<p>J'aimerais bien, réussir ma vie. Être aimééééé !!!!</p>
+			</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=817' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>I'm Kseso,<br/>
+			&ldquo;a #obCSServer&rdquo;</h2>
+			<p>Ramajero Argonauta, Enredique Amanuense de #CSS.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=948' alt />
+	</figure>
+	<section>
+		<div>
+			<h2><a href='https://escss.blogspot.com'>&xi;sCSS Blog</a></h2>
+			<p>#impoCSSible inside EsCSS. A Spanish #CSS blog where the borders & limits of #CSS disappear.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=737' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>#impoCSSible is nothing</h2>
+			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=870' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
+			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=743' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>Images from unsplash.it</h2>
+			<p>Because it´s the best for demos. Thanks, guys!</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=452' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>show the PEN.<br/>
+				<a href='https://escss.blogspot.com/2017/08/scroll-half-by-half-pure-css.html'>link the POST</a></h2>
+			<p>Por una web con mucho estilo, para argonautas con buen gusto.</p>
+		</div>
+	</section>
+	
+</article>
 </body>
-
-<footer>
-
-
-
-</footer>
 </html>
